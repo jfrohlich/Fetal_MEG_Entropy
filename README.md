@@ -3,6 +3,8 @@ Code for the analyses of fetal and neonatal MEG in Frohlich et al. 2024 Nature M
 
 Last updated 2024-01-04
 
+This project uses archived data from Moser et al. 2020 (https://zenodo.org/records/4018827) and Moser et al. 2021 (https://zenodo.org/records/4541463). Please visit those archives on Zenodo for the corresponding data. 
+
 NOTE: I have tried to include as many external dependencies here as possible, but you should ideally have Fieldtrip added to your path before running this code: https://www.fieldtriptoolbox.org/ 
 
 ## CSV Files
