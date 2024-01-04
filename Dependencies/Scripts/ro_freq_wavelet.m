@@ -1,3 +1,5 @@
+% I adapted this code from Joerg F. Hipp
+
 function [pow,pow_full,pow_median,pow_var,n,unit,foi_target,foi_delta,amp,unit_amp,logpow,unit_logpow] = ro_freq_wavelet(dat,cfg)
 
 % Morlet wavelet transform of continous electrophysiological data
