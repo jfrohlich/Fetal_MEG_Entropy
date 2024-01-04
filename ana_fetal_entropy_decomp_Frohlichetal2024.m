@@ -1,3 +1,6 @@
+% Joel Frohlich
+% University of Tuebingen
+
 % Script for running the fetal entropy decomposition 
 
 %%% The script begins:
