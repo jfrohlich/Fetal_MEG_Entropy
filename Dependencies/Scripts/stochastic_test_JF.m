@@ -1,5 +1,6 @@
 function stochastic = stochastic_test_JF(surr_y,fs,seed)
 
+% Original code by Daniel Toker, modified by Joel Frohlich
 % Time-series test of signal stochasticity. The test has been modified from
 % its original version, as described in Toker, Sommer, and D'Esposito, "A
 % simple method for detecting chaos in nature," Comms. Bio. (2020).
