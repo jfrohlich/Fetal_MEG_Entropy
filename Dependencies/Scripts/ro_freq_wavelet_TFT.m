@@ -1,7 +1,6 @@
-function [pow,pow_full,n,unit,foi_target,foi_delta,foi,DAT] = ro_freq_wavelet_TFT(dat,cfg)
+% I adapted this code from Joerg F. Hipp
 
-% FIX THIS SO THAT IT ACCOUNTS FOR NANS (I.E., RO_FREQ_WAVELET_TFT MUST
-% ACCEPT ALL NANS SO THAT WE CAN SEE WHERE DISCONTINUITIES ARE)
+function [pow,pow_full,n,unit,foi_target,foi_delta,foi,DAT] = ro_freq_wavelet_TFT(dat,cfg)
 
 % This function is modified from Joerg Hipp's Wavelet transform code so that
 % output is not averaged across time (gives a true time-frequency transform)
@@ -118,14 +117,14 @@ for ifoi=1:length(foi)
     n(ifoi)              = n_valid;
 end % loop foi
 if cfg.verbose, fprintf('] %.1f sec\n',toc), end
-unit='�V�/Hz'; % assuming the input signal was in uV
+unit='µV²/Hz'; % assuming the input signal was in uV
 
 % Normalization
 if strcmp(cfg.norm,'log2')
     w=diff(foi_delta')./cfg.oct_delta;
     pow = repmat(w,[n_sens,1]).*pow; % [uV^2/log2(Hz)] assuming the input signal was in uV
     pow_full = repmat(w,[n_sens,1]).*pow_full;
-    unit='µV²/log2(Hz)'; % assuming the input signal was in uV
+    unit='ÂµVÂ²/log2(Hz)'; % assuming the input signal was in uV
 end
 w_lin2log=diff(foi_delta')./cfg.oct_delta;
 
