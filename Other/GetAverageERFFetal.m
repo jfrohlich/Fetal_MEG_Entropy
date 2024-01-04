@@ -1,6 +1,6 @@
 % Joel Frohlich 
 % University of Tuebingen
-% Generates the ERF response template for fetuses n weeks and olde
+% Generates the ERF response template for fetuses n weeks and older
 
 % Okay, what is the script doing in this repo? After all, we didn't use its
 % results in the manuscript. 
