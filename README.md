@@ -3,6 +3,8 @@ Code for the analyses of fetal and neonatal MEG in Frohlich et al. 2024 Nature M
 
 Last updated 2024-01-04
 
+NOTE: I have tried to include as many external dependencies here as possible, but you should ideally have Fieldtrip added to your path before running this code: https://www.fieldtriptoolbox.org/ 
+
 ## CSV Files
 
 - **HypothesisTesting.csv:** Neonatal data from Julia (public repository).
