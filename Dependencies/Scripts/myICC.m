@@ -1,7 +1,8 @@
+% Adapted from Arash Salarian (https://www.mathworks.com/matlabcentral/fileexchange/22099-intraclass-correlation-coefficient-icc)
+
 function [r, LB, UB, F, df1, df2, p] = myICC(M, type, alpha, r0)
 % Intraclass correlation
 %
-%   Edited 24.01.23 by Joel Frohlich to allow NaNs
 %
 %   [r, LB, UB, F, df1, df2, p] = ICC(M, type, alpha, r0)
 %
@@ -45,6 +46,7 @@ function [r, LB, UB, F, df1, df2, p] = myICC(M, type, alpha, r0)
 %       reported.
 %
 %       (c) Arash Salarian, 2008
+%       Edited 24.01.23 by Joel Frohlich to allow NaNs
 %
 %       Reference: McGraw, K. O., Wong, S. P., "Forming Inferences About
 %       Some Intraclass Correlation Coefficients", Psychological Methods,
