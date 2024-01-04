@@ -1,3 +1,4 @@
+% Original code by Dmytro Iatsenko & Gemma Lancaster
 % Edited by Joel Frohlich 23.06.22 to allow for reproducibility with parfor
 % 
 % Version 1.0 20/06/2018
