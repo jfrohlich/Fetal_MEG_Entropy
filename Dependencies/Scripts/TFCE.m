@@ -1,3 +1,5 @@
+% Joel Frohlich
+% University of Tuebingen
 
 function [lbl_out,n,statsum,idx_n,survive] = TFCE(Pvals,Tstats,dir,thresh)
 
