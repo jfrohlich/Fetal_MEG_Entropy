@@ -5,7 +5,7 @@ Last updated 2024-01-04
 
 This project uses archived data from Moser et al. 2020 (https://zenodo.org/records/4018827) and Moser et al. 2021 (https://zenodo.org/records/4541463). Please visit those archives on Zenodo for the corresponding data. 
 
-NOTE: I have tried to include as many external dependencies here as possible, but you should ideally have Fieldtrip added to your path before running this code: https://www.fieldtriptoolbox.org/ 
+NOTE: I have tried to include as many external dependencies here as possible (and please note that the repo license only applies to my code and not these dependencies), but you should ideally have Fieldtrip also added to your path before running my code: https://www.fieldtriptoolbox.org/ 
 
 ## CSV Files
 
