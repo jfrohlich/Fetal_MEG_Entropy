@@ -3,6 +3,8 @@ function [mse,scale,n_valid,r] = ro_mse(dat,cfg)
 
 % Computes multi scale entropy (if scales is set to 1 -> sample entropy)
 %
+% I adapted this code from Joerg F. Hipp
+%
 % Modified from original function (ro_mse) 09/20/18 by Joel Frohlich for
 % use with parallel computing toolbox and updated 02/21/19 to allow the
 % dynamic tolerance (different r for each scale)
