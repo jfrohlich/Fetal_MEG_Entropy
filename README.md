@@ -7,22 +7,24 @@ This project uses archived data from Moser et al. 2020 (https://zenodo.org/recor
 
 NOTE: I have tried to include as many external dependencies here as possible (and please note that the repo license only applies to my code and not these dependencies), but if you run into problems, try also adding Fieldtrip to your path before running my code (https://www.fieldtriptoolbox.org/). 
 
-## Principal scripts
+# Principal scripts
 
-# Entropy Computation
+## Entropy Computation
 
 - **ana_MEG_fetal_entropy_frohlichetal2024.m:** Computes fetal entropy measures and runs stochasticity tests for fetal data.
-- **ana_MEG_neonate_entropy_frohlichetal202.m:** Similar to the above, but for newborn data.
+- **ana_MEG_neonate_entropy_frohlichetal2024.m:** Similar to the above, but for newborn data.
 
-# Analysis, Statistics, and Plotting
+## Analysis, Statistics, and Plotting
 
-- **ana_fMEG_stats_fetal_frohlichetal202.m:** Analysis script for fetal data, runs statistics, and generates figures.
-- **ana_fMEG_stats_neonates_frohlichetal202.m:** Similar to the above, but for newborn data.
-- **ana_fetal_entropy_decomp_frohlichetal202.m:** Runs entropy decomposition for fetal data (younger vs. older fetuses).
-- **ana_neonate_entropy_decomp_frohlichetal202.m:** Runs entropy decomposition for neonatal data (younger vs. older newborns).
+- **ana_fMEG_stats_fetal_frohlichetal2024.m:** Analysis script for fetal data, runs statistics, and generates figures.
+- **ana_fMEG_stats_neonates_frohlichetal2024.m:** Similar to the above, but for newborn data.
+- **ana_fetal_entropy_decomp_frohlichetal2024.m:** Runs entropy decomposition for fetal data (younger vs. older fetuses).
+- **ana_neonate_entropy_decomp_frohlichetal2024.m:** Runs entropy decomposition for neonatal data (younger vs. older newborns).
 - **FetalMediationTest_frohlichetal2024.R:** Runs the mediation analysis to determine if effects of sex on entropy are mediated by amplitude.
--  **Big_FDR_correction_BH_frohlichetal202.m:** Run an false discover rate correction on all results.
+-  **Big_FDR_correction_BH_frohlichetal2024.m:** Run an false discover rate correction on all results.
   
+# Entropy decompositions scripts for each entropy measure
+## These scripts are called by ana_fetal_entropy_decomp_frohlichetal2024.m and ana_fetal_entropy_decomp_frohlichetal2024.m
 
 ####################################################################################
 ## CSV Files
