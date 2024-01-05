@@ -97,8 +97,19 @@ NOTE: I have tried to include as many external dependencies here as possible (an
   
 ### .MAT Files
 
-- **Data_traces.mat:** Fetal data.
-- **grand_average_ERFs.m:** ERF templates from fetuses.
-- **Newborn_ERFs.mat:** ERF templates from newborns.
+- **Alltable.mat:** Huge table with most relevant variables for all subjects
+- **CTWDecompfMEG2023_Nsur=250.mat:** Output of fetal CTW entropy decomposition
+- **CTWDecompneonate2023_Nsur=250.mat:** Output of neonatal CTW entropy decomposition
+- **LZCDecompfMEG2023_Nsur=250.mat:** Output of fetal LZC entropy decomposition
+- **LZCDecompneonate2023_Nsur=250.mat:** Output of neonatal LZC entropy decomposition
+- **MSEDecompfMEG2023_Nsur=250.mat:** Output of fetal mMSE entropy decomposition
+- **MSEDecompneonate2023_Nsur=250.mat:** Output of neonatal mMSE entropy decomposition
+- **Newborn_ERFs.mat:** Contains a "template" of the average neonatal ERF response -- isn't strictly necessary anymore but some functions will still ask for it
+- **PermEnDecompfMEG2023_Nsur=250.mat:** Output of fetal PermEn entropy decomposition (both 32 and 64 ms values for tau)
+- **PermEnDecompneonate2023_Nsur=250.mat:** Output of neonatal PermEn entropy decomposition (both 32 and 64 ms values for tau)
+- **grand_average_ERFs.mat:**  Contains a "template" of the average fetal ERF response -- isn't strictly necessary anymore but some functions will still ask for it
+- **mSampEnDecompfMEG2023_Nsur=250.mat:** Output of fetal mSampEn entropy decomposition
+- **mSampEnDecompneonate2023_Nsur=250.mat:** Output of neonatal mSampEn entropy decomposition
+- **newbornIDs.mat:** Needed at some point to understand neonatal subject IDs
 
 
