@@ -43,29 +43,40 @@ NOTE: I have tried to include as many external dependencies here as possible (an
 
 ### Scripts (These include helper functions, my custom mods of native MATLAB functions, external code, etc.)
 
+- **cohens_d.m:** Compute the Cohen's d effect size.
 - **customcolormap.m:** Creates alternative colormaps (downloaded from MathWorks File Exchange).
 - **customcolormap_preset.m:** Works with the above function.
 - **CI_highlight.m:** Wrapper function for easier use of the `patch()` function to plot confidence interval highlights.
 - **CTWEntropRate.m:** Pedro's code for CTW entropy.
+- **data_range.m:** Computes the improvement (smaller range across recordings) after normalizing fetal data.
+- **filter_effects.m:** Shows effects of different filter lowpass filter settings on neonatal data. 
 - **GetAverageERFNeonatal.m:** Generates ERFs for the newborn ERF template.
 - **GetAverageERFFetal.m:** Similar to the above, but for fetuses >= 35 weeks.
 - **LZ76.m:** Pedro's Lempel-Ziv code.
-- **myviolin.m:** Generates violin plots (modified from code on MathWorks File Exchange).
-- **NewbornSubjectIDDecoder.m:** Fixes errors in decoding subject IDs.
-- **PermEn.m:** Computes permutation entropy (modified from code downloaded [here](https://de.mathworks.com/matlabcentral/fileexchange/37289-permutation-entropy)).
-- **PermEnDecomp_fMEG.m:** Permutation entropy decomposition, adapted from code by Pedro Mediano.
-- **ro_cluster_timefreq.m:** Needed for permutation clusters statistics.
-- **ro_freq_wavelet.m:** Joerg's code to get power spectrum (averaged over time) with Morlet wavelets.
-- **ro_freq_wavelet_TFT.m:** Computes the Morlet wavelet transform, written by Joerg Hipp with slight modifications.
-- **ro_mse.m:** Joerg's multiscale entropy code.
-- **sortref.m:** Sorts one list with respect to another.
-- **stochastic_test_JF.m:** Tests whether a signal is stochastic or deterministic, modified from Toker et al. 2020.
-- **swtest.m:** Shapiro Wilk test.
+- **makefighandsome.m:** Makes aesthetic changes to figures.
+- **makefigpretty.m:** Another one of my scripts to make aesthetic changes to figures.
+- **myICC.m:** Modification of external code to compute the intraclass correlation (ICC).
 - **mycolorbar.m:** Nicer-looking colorbar.
 - **myfigure.m:** Bigger window for the figure.
 - **myfigure2.m:** Even bigger window for the figure.
 - **mylsline.m:** Nicer-looking least squares line.
 - **mypcolor.m:** Improvement over MATLAB's pcolor.
+- **myviolin.m:** Generates violin plots (modified from code on MathWorks File Exchange).
+- **NewbornSubjectIDDecoder.m:** Fixes errors in decoding subject IDs.
+- **PermEn.m:** Computes permutation entropy (modified from code downloaded [here](https://de.mathworks.com/matlabcentral/fileexchange/37289-permutation-entropy)).
+- **PermEnDecomp_fMEG.m:** Permutation entropy decomposition, adapted from code by Pedro Mediano.
+- **prop_test.m:** Computes the chi-squared test (external code downloaded from eleswhere). 
+- **ro_cluster_timefreq.m:** Needed for permutation clusters statistics.
+- **ro_freq_wavelet.m:** Joerg Hipp's code to get power spectrum (averaged over time) with Morlet wavelets.
+- **ro_freq_wavelet_TFT.m:** Computes the Morlet wavelet transform, written by Joerg Hipp with slight modifications.
+- **ro_mse.m:** Joerg's multiscale entropy code.
+- **sortref.m:** Sorts one list with respect to another.
+- **surrogate_JF.m:** Modification of external code to compute surrogate data.
+- **stochastic_test_JF.m:** Tests whether a signal is stochastic or deterministic, modified from Toker et al. 2020.
+- **SubjectTable.m:** Generates a table of all subjects.
+- **swtest.m:** Shapiro Wilk test (downloaded from elsewhere, actually unsure if this is even still used but including here to be safe).
+- **timeresentropy_preissl.m:** My code to compute time-resolved entropy (with CTW) for this project. 
+- **TFCE.m:** Function for threshold-free cluster enhancement statistics.
 
 ### Spreadsheets
 
