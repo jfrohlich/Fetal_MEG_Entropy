@@ -27,50 +27,6 @@ function [mse,scale,n_valid,r] = ro_mse(dat,cfg)
 % (2) cfg.type='Xie':   Xie, H.-B., He, W.-X., and Liu, H. (2008). Measuring time series regularity using nonlinear similarity-based sample entropy. Physics Letters A 372, 7140?7146.
 % See Grandy et al., 2016 for justification of concatenating shorter snipets (as may be the case for data with intermitted nan sesctions). Grandy, T.H., Garrett, D.D., Schmiedek, F., and Werkle-Bergner, M. (2016). On the estimation of brain signal entropy from sparse neuroimaging data. Scientific Reports 6, 23073.
 %
-% % Example:
-% rng('default'), rng(1)
-% x=randn(5,2^10); x(:,100:200)=nan; x(:,1010:1300)=nan;
-% cfg = [];
-% cfg.verbose=1;
-% cfg.r = 0.15*nanstd(x,[],2);
-% cfg.m = 2;
-% cfg.scales=1:10;
-% cfg.type='Costa';
-% mse=ro_mse(x,cfg)
-%
-% % Example 2 (produce figure as in Xie et al. (Figure 1)
-% rng('default'), rng(5)
-% x=randn(1,100);
-% r=0.01:0.01:1;
-% clear cfg
-% cfg.m=2;
-% cfg.scales=1;
-% for icnt=1:length(r)
-%     cfg.r = r(icnt);
-%     cfg.type='Costa';
-%     mse_costa(icnt)=ro_mse(x,cfg);
-%     cfg.type='Xie';
-%     mse_xie(icnt)=ro_mse(x,cfg);
-% end
-% figure('Color','w')
-% plot(r,mse_xie,'ro')
-% hold on
-% plot(r,mse_costa,'k*')
-%
-% Example 3
-% load ./papers/multiscale_entropy/packsource.mat
-% fsample=100;
-% datasource(:,sampletype100hz~=1)=nan;
-% x = datasource;
-% cfg = [];
-% cfg.verbose=1;
-% cfg.r = 0.15*nanstd(x,[],2);
-% cfg.m = 2;
-% cfg.scales=1:20;
-% cfg.type='Costa';
-% [mse,scales,n_valid]=ro_mse(x,cfg)
-% n_valid/fsample
-%
 %
 % Relevant papers on mse and autism:
 % - Bosl, W., Tierney, A., Tager-Flusberg, H., and Nelson, C. (2011). EEG complexity as a biomarker for autism spectrum disorder risk. BMC Medicine 9, 18.
