@@ -32,6 +32,11 @@ NOTE: I have tried to include as many external dependencies here as possible (an
 - **mMSEDecomposition_fMEG.m:** Run the entropy decomposition on modified multiscale entropy.
 - **mSampEnDecomposition_fMEG.m:** Run the entropy decomposition on modified sample entropy.
 
+# Other
+## (You might not need this code, but it's here just in case ...)
+
+- **GetAverageERFFetal.m:** Generate an average ERF template from fetal data (using older fetuses based on results of Moser et al. 2021).
+- **GetAverageERFNeonatal.m:** Generate an average ERF template from neonatal data. 
 
 ####################################################################################
 ## CSV Files
