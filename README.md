@@ -24,7 +24,7 @@ NOTE: I have tried to include as many external dependencies here as possible (an
 -  **Big_FDR_correction_BH_frohlichetal2024.m:** Run an false discover rate correction on all results.
   
 # entropy_decomp_code_adapted_from_PMediano
-## (These scripts are called by the principal scripts.)
+## (These scripts are called by the principal scripts.) 
 
 - **CTWDecomposition_fMEG.m:** Run the entropy decomposition on contrext-tree weighted complexity.
 - **LZDecomposition_fMEG.m:** Run the entropy decomposition on Lempel-Ziv complexity.
@@ -33,26 +33,15 @@ NOTE: I have tried to include as many external dependencies here as possible (an
 - **mSampEnDecomposition_fMEG.m:** Run the entropy decomposition on modified sample entropy.
 
 # Other
-## (You might not need this code, but it's here just in case ...)
+## (You probably won't need this code, but it's here just in case ...)
 
 - **GetAverageERFFetal.m:** Generate an average ERF template from fetal data (using older fetuses based on results of Moser et al. 2021).
 - **GetAverageERFNeonatal.m:** Generate an average ERF template from neonatal data. 
 
-####################################################################################
-## CSV Files
+# Dependencies
+## (The prinicipal scripts have a lot of dependencies! I've tried my best to list and describe as many as possible below ... )
 
-- **HypothesisTesting.csv:** Neonatal data from Julia (public repository).
-- **MeasurementQualityTable.csv:** Table with age information on newborns (shared privately).
-- **NeonatalEntropyPower.csv:** Entropy and power values for neonates (fetal file too large for GitHub).
-- **NeonatalTable.csv:** Entropy values from neonates with variations (ERF template subtracted, truncation, etc.).
-
-## .MAT Files
-
-- **Data_traces.mat:** Fetal data.
-- **grand_average_ERFs.m:** ERF templates from fetuses.
-- **Newborn_ERFs.mat:** ERF templates from newborns.
-
-## Helper Functions and External Code
+### Scripts (These include helper functions, my custom mods of native MATLAB functions, external code, etc.)
 
 - **customcolormap.m:** Creates alternative colormaps (downloaded from MathWorks File Exchange).
 - **customcolormap_preset.m:** Works with the above function.
@@ -72,16 +61,23 @@ NOTE: I have tried to include as many external dependencies here as possible (an
 - **sortref.m:** Sorts one list with respect to another.
 - **stochastic_test_JF.m:** Tests whether a signal is stochastic or deterministic, modified from Toker et al. 2020.
 - **swtest.m:** Shapiro Wilk test.
-
-## Joel's Modifications of Native MATLAB Functions/Commands
-
 - **mycolorbar.m:** Nicer-looking colorbar.
 - **myfigure.m:** Bigger window for the figure.
 - **myfigure2.m:** Even bigger window for the figure.
 - **mylsline.m:** Nicer-looking least squares line.
 - **mypcolor.m:** Improvement over MATLAB's pcolor.
 
-## Candidates for Deletion
+### Spreadsheets
 
-- **chaos.m:** Used to compute the k-statistic (chaoticity), but replaced by `stochasticity_test.m`.
-- **fixfiles.m:** Used once to reorganize data matrices in older files (eliminate first singleton dimension), likely no longer needed.
+- **HypothesisTesting.csv:** Neonatal data from Julia (public repository).
+- **MeasurementQualityTable.csv:** Table with age information on newborns (shared privately).
+- **NeonatalEntropyPower.csv:** Entropy and power values for neonates (fetal file too large for GitHub).
+- **NeonatalTable.csv:** Entropy values from neonates with variations (ERF template   subtracted, truncation, etc.).
+
+### .MAT Files
+
+- **Data_traces.mat:** Fetal data.
+- **grand_average_ERFs.m:** ERF templates from fetuses.
+- **Newborn_ERFs.mat:** ERF templates from newborns.
+
+
