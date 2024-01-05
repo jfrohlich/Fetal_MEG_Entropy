@@ -55,7 +55,7 @@ NOTE: I have tried to include as many external dependencies here as possible (an
 - **data_range.m:** Computes the improvement (smaller range across recordings) after normalizing fetal data.
 - **filter_effects.m:** Shows effects of different filter lowpass filter settings on neonatal data. 
 - **GetAverageERFNeonatal.m:** Generates ERFs for the newborn ERF template.
-- **GetAverageERFFetal.m:** Similar to the above, but for fetuses >= 35 weeks.
+- **GetAverageERFFetal.m:** Similar to the above, but for fetuses (specifically, older fetuses).
 - **LZ76.m:** Pedro's Lempel-Ziv code.
 - **makefighandsome.m:** Makes aesthetic changes to figures.
 - **makefigpretty.m:** Another one of my scripts to make aesthetic changes to figures.
@@ -65,18 +65,18 @@ NOTE: I have tried to include as many external dependencies here as possible (an
 - **myfigure2.m:** Even bigger window for the figure.
 - **mylsline.m:** Nicer-looking least squares line.
 - **mypcolor.m:** Improvement over MATLAB's pcolor.
-- **myviolin.m:** Generates violin plots (modified from code on MathWorks File Exchange).
+- **myviolin.m:** Generates violin plots (modified from code on [MathWorks File Exchange](https://de.mathworks.com/matlabcentral/fileexchange/45134-violin-plot)).
 - **NewbornSubjectIDDecoder.m:** Fixes errors in decoding subject IDs.
-- **PermEn.m:** Computes permutation entropy (modified from code downloaded [here](https://de.mathworks.com/matlabcentral/fileexchange/37289-permutation-entropy)).
+- **PermEn.m:** Computes permutation entropy (modified from code downloaded [from MathWorks File Exchange](https://de.mathworks.com/matlabcentral/fileexchange/37289-permutation-entropy)).
 - **PermEnDecomp_fMEG.m:** Permutation entropy decomposition, adapted from code by Pedro Mediano.
-- **prop_test.m:** Computes the chi-squared test (external code downloaded from eleswhere). 
+- **prop_test.m:** Computes the chi-squared test (external code downloaded from [Mathworks File Exchange](https://de.mathworks.com/matlabcentral/fileexchange/45966-compare-two-proportions-chi-square)). 
 - **ro_cluster_timefreq.m:** Needed for permutation clusters statistics.
 - **ro_freq_wavelet.m:** Joerg Hipp's code to get power spectrum (averaged over time) with Morlet wavelets.
 - **ro_freq_wavelet_TFT.m:** Computes the Morlet wavelet transform, written by Joerg Hipp with slight modifications.
 - **ro_mse.m:** Joerg's multiscale entropy code.
 - **sortref.m:** Sorts one list with respect to another.
-- **surrogate_JF.m:** Modification of external code to compute surrogate data.
-- **stochastic_test_JF.m:** Tests whether a signal is stochastic or deterministic, modified from Toker et al. 2020.
+- **surrogate_JF.m:** Modification of *external code* to compute surrogate data.
+- **stochastic_test_JF.m:** Tests whether a signal is stochastic or deterministic, modified from *external code* by Toker et al. 2020.
 - **SubjectTable.m:** Generates a table of all subjects.
 - **swtest.m:** Shapiro Wilk test (downloaded from elsewhere, actually unsure if this is even still used but including here to be safe).
 - **table2latex.m:** External code for writing tables in LaTeX format. 
