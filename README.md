@@ -1,12 +1,30 @@
  # Fetal_MEG_Entropy
 Code for the analyses of fetal and neonatal MEG in Frohlich et al. 2024 Nature Mental Health
 
-Last updated 2024-01-04
+Last updated 2024-01-05
 
 This project uses archived data from Moser et al. 2020 (https://zenodo.org/records/4018827) and Moser et al. 2021 (https://zenodo.org/records/4541463). Please visit those archives on Zenodo for the corresponding data. 
 
 NOTE: I have tried to include as many external dependencies here as possible (and please note that the repo license only applies to my code and not these dependencies), but if you run into problems, try also adding Fieldtrip to your path before running my code (https://www.fieldtriptoolbox.org/). 
 
+## Principal scripts
+
+# Entropy Computation
+
+- **ana_MEG_fetal_entropy_frohlichetal2024.m:** Computes fetal entropy measures and runs stochasticity tests for fetal data.
+- **ana_MEG_neonate_entropy_frohlichetal202.m:** Similar to the above, but for newborn data.
+
+# Analysis, Statistics, and Plotting
+
+- **ana_fMEG_stats_fetal_frohlichetal202.m:** Analysis script for fetal data, runs statistics, and generates figures.
+- **ana_fMEG_stats_neonates_frohlichetal202.m:** Similar to the above, but for newborn data.
+- **ana_fetal_entropy_decomp_frohlichetal202.m:** Runs entropy decomposition for fetal data (younger vs. older fetuses).
+- **ana_neonate_entropy_decomp_frohlichetal202.m:** Runs entropy decomposition for neonatal data (younger vs. older newborns).
+- **FetalMediationTest_frohlichetal2024.R:** Runs the mediation analysis to determine if effects of sex on entropy are mediated by amplitude.
+-  **Big_FDR_correction_BH_frohlichetal202.m:** Run an false discover rate correction on all results.
+  
+
+####################################################################################
 ## CSV Files
 
 - **HypothesisTesting.csv:** Neonatal data from Julia (public repository).
@@ -19,17 +37,6 @@ NOTE: I have tried to include as many external dependencies here as possible (an
 - **Data_traces.mat:** Fetal data.
 - **grand_average_ERFs.m:** ERF templates from fetuses.
 - **Newborn_ERFs.mat:** ERF templates from newborns.
-
-## Entropy Computation
-
-- **ana_MEG_fetal_entropy.m:** Computes fetal entropy measures and runs stochasticity tests for fetal data.
-- **ana_MEG_neonate_entropy.m:** Similar to the above, but for newborn data.
-
-## Analysis, Statistics, and Plotting
-
-- **ana_fMEG_stats_fetal.m:** Analysis script for fetal data, runs statistics, and generates figures.
-- **ana_fMEG_stats_neonates.m:** Similar to the above, but for newborn data.
-- **ana_fetal_entropy_decomp.m:** Runs entropy decomposition for fetal data (young vs. old fetuses, condition sssD, tau = 32 ms).
 
 ## Helper Functions and External Code
 
