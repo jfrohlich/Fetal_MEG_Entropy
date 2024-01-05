@@ -39,10 +39,13 @@ NOTE: I have tried to include as many external dependencies here as possible (an
 - **GetAverageERFNeonatal.m:** Generate an average ERF template from neonatal data. 
 
 # Dependencies
-## (The prinicipal scripts have a lot of dependencies! I've tried my best to list and describe as many as possible below ... )
+## The prinicipal scripts have a lot of dependencies! I've tried my best to list and describe as many as possible below ... 
 
 ### Scripts (These include helper functions, my custom mods of native MATLAB functions, external code, etc.)
 
+- **betacdf.m:** Octave function, CDF of the beta distribution.
+- **betainv.m:** Octave function, quantile function of the beta distribution.
+- **betapdf.m:** Octave function, PDF of the beta distribution.
 - **cohens_d.m:** Compute the Cohen's d effect size.
 - **customcolormap.m:** Creates alternative colormaps (downloaded from MathWorks File Exchange).
 - **customcolormap_preset.m:** Works with the above function.
@@ -75,6 +78,7 @@ NOTE: I have tried to include as many external dependencies here as possible (an
 - **stochastic_test_JF.m:** Tests whether a signal is stochastic or deterministic, modified from Toker et al. 2020.
 - **SubjectTable.m:** Generates a table of all subjects.
 - **swtest.m:** Shapiro Wilk test (downloaded from elsewhere, actually unsure if this is even still used but including here to be safe).
+- **table2latex.m:** External code for writing tables in LaTeX format. 
 - **timeresentropy_preissl.m:** My code to compute time-resolved entropy (with CTW) for this project. 
 - **TFCE.m:** Function for threshold-free cluster enhancement statistics.
 
