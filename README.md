@@ -84,11 +84,17 @@ NOTE: I have tried to include as many external dependencies here as possible (an
 
 ### Spreadsheets
 
-- **HypothesisTesting.csv:** Neonatal data from Julia (public repository).
-- **MeasurementQualityTable.csv:** Table with age information on newborns (shared privately).
-- **NeonatalEntropyPower.csv:** Entropy and power values for neonates (fetal file too large for GitHub).
-- **NeonatalTable.csv:** Entropy values from neonates with variations (ERF template   subtracted, truncation, etc.).
-
+- **FetalModel.csv:** Test statistics from linear mixed models predicting fetal entropy measures.
+- **FetalModelDynamics.csv:** Test statistics from linear mixed model predicting fetal cortical dynamics (stochastic versus deterministic).
+- **FetalSurrogate.csv:** Test statistics predicting surrogacy for each fetal entropy measure. 
+- **NeonatalModel.csv:** Test statistics from linear mixed models predicting neonatal entropy measures.
+- **NeonatalModelDynamics.csv:** Test statistics from linear mixed model predicting neonatal cortical dynamics (stochastic versus deterministic).
+- **NeonatalSurrogate.csv:** Test statistics predicting surrogacy for each neonatal entropy measure. 
+- **NeonatalTable.csv:** MEG entropy values from neonatal recordings.
+- **NeonatalEntropyPower.csv:** This is an updated version of the table from the Zenodo repository with added values for entropy, spectral power, dynamics, etc.
+- **fMEGEntropyDecomp.csv:** Test statics from models testing for differences between amplitude and non-amplitude components in fetal entropy measures.
+- **neonate_decomp.csv:** Test statics from models testing for differences between amplitude and non-amplitude components in neonatal entropy measures.
+  
 ### .MAT Files
 
 - **Data_traces.mat:** Fetal data.
