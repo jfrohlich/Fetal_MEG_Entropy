@@ -48,7 +48,7 @@ NOTE: I have tried to include as many external dependencies here as possible (an
 - **betainv.m:** Octave function, quantile function of the beta distribution. **external code**
 - **betapdf.m:** Octave function, PDF of the beta distribution. **external code**
 - **cohens_d.m:** Compute the Cohen's d effect size.
-- **customcolormap.m:** Creates alternative colormaps (downloaded from MathWorks File Exchange).
+- **customcolormap.m:** Creates alternative colormaps (downloaded from [MathWorks File Exchange](https://www.mathworks.com/matlabcentral/fileexchange/69470-custom-colormap)). **external code**
 - **customcolormap_preset.m:** Works with the above function. **external code**
 - **CI_highlight.m:** Wrapper function for easier use of the `patch()` function to plot confidence interval highlights.
 - **CTWEntropRate.m:** Pedro Mediano's code for CTW entropy. **external code**
@@ -76,7 +76,6 @@ NOTE: I have tried to include as many external dependencies here as possible (an
 - **surrogate_JF.m:** Modification of *external code* to compute surrogate data.
 - **stochastic_test_JF.m:** Tests whether a signal is stochastic or deterministic, modified from *external code* by Toker et al. 2020.
 - **SubjectTable.m:** Generates a table of all subjects.
-- **swtest.m:** Shapiro Wilk test (downloaded from elsewhere, actually unsure if this is even still used but including here to be safe).  **external code**
 - **table2latex.m:** External code for writing tables in LaTeX format. 
 - **timeresentropy_preissl.m:** My code to compute time-resolved entropy (with CTW) for this project. 
 - **TFCE.m:** Function for threshold-free cluster enhancement statistics.
