@@ -23,8 +23,15 @@ NOTE: I have tried to include as many external dependencies here as possible (an
 - **FetalMediationTest_frohlichetal2024.R:** Runs the mediation analysis to determine if effects of sex on entropy are mediated by amplitude.
 -  **Big_FDR_correction_BH_frohlichetal2024.m:** Run an false discover rate correction on all results.
   
-# Entropy decompositions scripts for each entropy measure
-## These scripts are called by ana_fetal_entropy_decomp_frohlichetal2024.m and ana_fetal_entropy_decomp_frohlichetal2024.m
+# entropy_decomp_code_adapted_from_PMediano
+## (These scripts are called by the principal scripts.)
+
+-**CTWDecomposition_fMEG.m:** Run the entropy decomposition on contrext-tree weighted complexity
+-**LZDecomposition_fMEG.m:** Run the entropy decomposition on Lempel-Ziv complexity
+-**PermEnDecomposition_fMEG.m:** Run the entropy decomposition on permutation entropy (with tau = 32 ms and 64 ms)
+-**mMSEDecomposition_fMEG.m:** Run the entropy decomposition on modified multiscale entropy
+-**mSampEnDecomposition_fMEG.m:** Run the entropy decomposition on modified sample entropy
+
 
 ####################################################################################
 ## CSV Files
