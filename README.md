@@ -26,8 +26,8 @@ NOTE: I have tried to include as many external dependencies here as possible (an
 # entropy_decomp_code_adapted_from_PMediano
 ## (These scripts are called by the principal scripts.)
 
--**CTWDecomposition_fMEG.m:** Run the entropy decomposition on contrext-tree weighted complexity
--**LZDecomposition_fMEG.m:** Run the entropy decomposition on Lempel-Ziv complexity
+-**CTWDecomposition_fMEG.m:** Run the entropy decomposition on contrext-tree weighted complexity.
+-**LZDecomposition_fMEG.m:** Run the entropy decomposition on Lempel-Ziv complexity.
 -**PermEnDecomposition_fMEG.m:** Run the entropy decomposition on permutation entropy (with tau = 32 ms and 64 ms)
 -**mMSEDecomposition_fMEG.m:** Run the entropy decomposition on modified multiscale entropy
 -**mSampEnDecomposition_fMEG.m:** Run the entropy decomposition on modified sample entropy
