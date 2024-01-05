@@ -41,7 +41,8 @@ NOTE: I have tried to include as many external dependencies here as possible (an
 # Dependencies
 ## The prinicipal scripts have a lot of dependencies! I've tried my best to list and describe as many as possible below ... 
 
-### Scripts (These include helper functions, my custom mods of native MATLAB functions, external code, etc.)
+### Scripts (These include helper functions, my custom mods of native MATLAB functions, external code, etc.) 
+### Note that many of these are publicly available external scripts! See code comments for proper attribution. 
 
 - **betacdf.m:** Octave function, CDF of the beta distribution.
 - **betainv.m:** Octave function, quantile function of the beta distribution.
