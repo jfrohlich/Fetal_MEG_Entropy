@@ -2735,7 +2735,7 @@ Mmse = nan(20,Ns);
 Mse = nan(20,Ns);
 
 
-% ICC (fetuses + newborns)
+% ICC (fetuses + newborns, NOT included in the manuscript)
 for isub = 1:Ns
     Tsub = Alltable(Alltable.ID == subs(isub),:);
 
@@ -2810,7 +2810,7 @@ Mmse = nan(20,Ns);
 Mse = nan(20,Ns);
 
 
-% ICC (just fetuses)
+% ICC (just fetuses, this is the one that we used in the manuscript)
 for isub = 1:Ns
     Tsub = Alltable(Alltable.ID == subs(isub) & ~Alltable.BornYet,:);
 
