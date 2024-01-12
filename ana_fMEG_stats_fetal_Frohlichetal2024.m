@@ -1494,7 +1494,7 @@ PZ = P; % copy table
 for icol = 2:size(PZ,2) % for each column except the first (IDs)
     if isa(PZ{:,icol},'double') || isa(PZ{:,icol},'single') % if it's the appropriate class
         PZ{:,icol} = nanzscore(PZ{:,icol});
-       hat assert(round(nanvar(PZ{:,icol}),3)==1,'Column does not have unit variance within given tolerance after z-scoring')
+        assert(round(nanvar(PZ{:,icol}),3)==1,'Column does not have unit variance within given tolerance after z-scoring')
     end
 end
 
